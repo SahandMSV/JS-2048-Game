@@ -30,4 +30,88 @@ body {
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.winningTag {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    display: flex;
+    transform: translate(-94px, -120px);
+    position: absolute;
+    color: white;
+    z-index: -1;
+}
+
+.winningTag > div {
+    position: relative;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;
+}
+
+.num_2 {
+    left: calc(50%);
+    transition:
+        transform 0.5s ease 0s,
+        rotate 0.5s ease 0s,
+        color 0.3s ease 0s;
+}
+
+.num_0 {
+    left: calc(50%);
+    transition:
+        transform 0.5s ease 0.15s,
+        rotate 0.5s ease 0s,
+        color 0.3s ease 0s;
+}
+
+.num_4 {
+    left: calc(50%);
+    transition:
+        transform 0.5s ease 0.3s,
+        rotate 0.5s ease 0s,
+        color 0.3s ease 0s;
+}
+
+.num_8 {
+    left: calc(50%);
+    transition:
+        transform 0.5s ease 0.45s,
+        rotate 0.5s ease 0s,
+        color 0.3s ease 0s;
+}
+
+.animate_2 {
+    transform: translate(-60%, -120%);
+    rotate: -15deg;
+}
+
+.animate_0 {
+    transform: translate(-19%, -125%);
+    rotate: -3.5deg;
+}
+
+.animate_4 {
+    transform: translate(15%, -125%);
+    rotate: 7deg;
+}
+
+.animate_8 {
+    transform: translate(60%, -120%);
+    rotate: 15deg;
+}
+
+.restartText {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 150px));
+    transition: transform 0.3s ease;
+    z-index: -2;
+}
+
+.restartText_animation {
+    transform: translate(-50%, calc(-50% + 180px));
 }
